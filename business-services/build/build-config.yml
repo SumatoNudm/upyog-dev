@@ -100,3 +100,12 @@ config:
         dockerfile: "build/maven/Dockerfile"  
       - work-dir: "verification-service/src/main/resources/db"
         image-name: "verification-service-db" 
+
+
+  - name: "builds/business-services/state-finance"
+    build:
+      - work-dir: "state-finance"
+        image-name: "state-finance"
+        dockerfile: "build/maven/Dockerfile"  
+      - work-dir: "state-finance/src/main/resources/db"
+        image-name: "state-finance-db" 
