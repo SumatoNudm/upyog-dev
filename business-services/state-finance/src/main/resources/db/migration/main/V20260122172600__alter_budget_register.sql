@@ -1,0 +1,3 @@
+ALTER TABLE budget_register
+    ADD COLUMN IF NOT EXISTS
+    cityname VARCHAR(100) NOT NULL DEFAULT '';
