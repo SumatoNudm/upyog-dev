@@ -734,3 +734,13 @@ config:
         dockerfile: "build/maven/Dockerfile"
       - work-dir: "municipal-services/tp-services/src/main/resources/db"
         image-name: "tp-services-db"
+
+  - name: "builds/upyog/municipal-services/state-finance"
+    build:
+      - work-dir: "business-services/state-finance"
+        image-name: "state-finance"
+        dockerfile: "build/maven/Dockerfile"
+      - work-dir: "business-services/state-finance/src/main/resources/db"
+        image-name: "state-finance-db"
+
+  
